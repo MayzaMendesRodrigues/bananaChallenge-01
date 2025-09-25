@@ -1,6 +1,4 @@
-
 # Banana Challenge 01 🍌
-
 
 [![Testing](https://img.shields.io/badge/Testing-TDD-blue)](https://en.wikipedia.org/wiki/Test-driven_development)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript\&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -9,53 +7,53 @@
 
 ---
 
-##  Sobre o Projeto
+## About the Project
 
-Este projeto foi desenvolvido como parte de um **desafio proposto pelo professor Alan Gomes**, realizado em **pair programming** por **Luiz Paulo Honda** e **Mayza Ynara**.
+This project was developed as part of a **challenge proposed by professor Alan Gomes**, carried out in **pair programming** by **Luiz Paulo Honda** and **Mayza Ynara**.
 
-O objetivo foi implementar funcionalidades em **JavaScript**, seguindo a metodologia de **Test-Driven Development (TDD)**, garantindo assim maior confiabilidade, manutenção e clareza no código.
-
----
-
-##  Tecnologias Utilizadas
-
-* **JavaScript** – Lógica e implementação principal.
-* **TDD (Test-Driven Development)** – Desenvolvimento orientado a testes.
-* **Jest** – Framework para testes unitários.
-* **Git/GitHub** – Controle de versão e colaboração em equipe.
-* **Prettier & ESLint** – Padronização e boas práticas de código.
+The goal was to implement features in **JavaScript**, following the **Test-Driven Development (TDD)** methodology, ensuring greater reliability, maintainability, and clarity in the code.
 
 ---
 
-##  Objetivo do Desafio
+## Technologies Used
 
-* Exercitar a lógica de programação em **JavaScript**.
-* Aplicar **TDD** como prática de desenvolvimento.
-* Desenvolver em equipe utilizando **pair programming**.
-* Praticar versionamento colaborativo no **GitHub**.
+* **JavaScript** – Main logic and implementation.
+* **TDD (Test-Driven Development)** – Test-oriented development.
+* **Jest** – Unit testing framework.
+* **Git/GitHub** – Version control and team collaboration.
+* **Prettier & ESLint** – Code formatting and best practices.
 
 ---
 
-##  Como Rodar o Projeto
+## Challenge Goals
+
+* Practice programming logic with **JavaScript**.
+* Apply **TDD** as a development practice.
+* Work as a team using **pair programming**.
+* Practice collaborative version control on **GitHub**.
+
+---
+
+## How to Run the Project
 
 ```bash
-# Clonar o repositório
+# Clone the repository
 git clone https://github.com/MayzaMendesRodrigues/bananaChallenge-01.git
 cd bananaChallenge-01
 
-# Instalar dependências
+# Install dependencies
 npm install
 
-# Rodar os testes
+# Run tests
 npm test
 ```
 
 ---
 
-##  Testes
+## Tests
 
-O projeto foi desenvolvido com **Jest** desde o início, utilizando a metodologia **TDD**.
-Para rodar os testes:
+The project was developed with **Jest** from the start, following the **TDD** methodology.
+To run the tests:
 
 ```bash
 npm test
@@ -63,34 +61,35 @@ npm test
 
 ---
 
-##  Aprendizados
+## Learnings
 
-Durante o desenvolvimento deste desafio, os principais aprendizados foram:
+During the development of this challenge, the main learnings were:
 
-* A importância de escrever testes antes da implementação.
-* Como **TDD** ajuda a criar código mais limpo e modular.
-* Benefícios do **pair programming**, com troca de ideias em tempo real.
-
----
-
-##  Melhorias Futuras
-
-* Ampliar cobertura de testes automatizados.
-* Refatorar funções para maior reusabilidade.
-* Adicionar integração com CI (GitHub Actions).
+* The importance of writing tests before implementation.
+* How **TDD** helps create cleaner and more modular code.
+* Benefits of **pair programming**, with real-time idea exchange.
 
 ---
 
-##  Autores
+## Future Improvements
+
+* Expand automated test coverage.
+* Refactor functions for greater reusability.
+* Add CI integration (GitHub Actions).
+
+---
+
+## Authors
 
 * **Mayza Ynara** – [LinkedIn](https://linkedin.com/in/mayza-ynara-mendes-rodrigues)
 * **Luiz Paulo Honda** - [LinkedIn](https://www.linkedin.com/in/luiz-hondo-93bb6112a/)
 
 ---
 
-##  Licença
+## License
 
-Este projeto é de uso educacional e foi desenvolvido para fins de aprendizado.
+This project is for educational use and was developed for learning purposes.
+
 
 
 
