@@ -5,7 +5,7 @@ package-lock.json
 coverage/
 jest.config.mjs
 babel.config.json
-
-
+babel.config.cjs
+jest.config.js
 
 
