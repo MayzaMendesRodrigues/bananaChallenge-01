@@ -72,5 +72,9 @@ describe("Cheaper Hotel", () => {
     expect(result).toEqual({ name: "bridgewood", stars: 4, totalPrice: 100 });
   });
 });
+
+// describe("Should return the hotel with the proper cheaper price or most stars",()=>{
+//   test()
+// })
 //desafio 
 //10% para regular para 3 dias consecutivo, e 20% para rewards para 3 dias consecutivo

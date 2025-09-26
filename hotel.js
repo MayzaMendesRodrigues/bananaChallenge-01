@@ -48,6 +48,10 @@ export function compareHotel(inputClient) {
   }
   const inputParts = inputClient.trim().split(":");
   const clientType = inputParts[0].toLowerCase();
+  if(clientType !== "regular" && clientType !== "reward"){
+    throw new Error("Invalid client type, use 'Regular' or 'Reward' for client types")
+  }
+
   const dates = inputParts[1].split(",");
   const weekendFlag = validateDates(dates);
   const hotelTotalPrice = hotelsTotalPrice(clientType, weekendFlag);
