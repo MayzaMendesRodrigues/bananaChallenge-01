@@ -82,7 +82,7 @@ During the development of this challenge, the main learnings were:
 ## Authors
 
 * **Mayza Ynara** – [LinkedIn](https://linkedin.com/in/mayza-ynara-mendes-rodrigues)
-* **Luiz Paulo Honda** - [LinkedIn](https://www.linkedin.com/in/luiz-hondo-93bb6112a/)
+* **Luiz Paulo Hondo** - [LinkedIn](https://www.linkedin.com/in/luiz-hondo-93bb6112a/)
 
 ---
 
