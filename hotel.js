@@ -1,21 +1,52 @@
+import { differenceInCalendarDays, parseISO } from "date-fns";
 import { hotels , discountHotel } from "./data.js";
 import readline from "readline";
 
 
+export function consecutiveDate(dates){
+  for(let i = 1;i < dates.length; i++){
+    const previousDay = parseISO(dates[i-1]);
+    const actualDay = parseISO(dates[i]);
+    console.log("dia anterior" + previousDay)
+    console.log("dia atual" + actualDay)
+    const difference = differenceInCalendarDays(actualDay,previousDay);
+    if(difference !== 1){
+      return false;// não é consecutivo
+    }
+    return true// é consecutivo
+  }  
+
+}
+const datas1 = ["2025-09-20", "2025-09-21", "2025-09-22", "2025-09-25"];
+const datas2 = ["2025-09-20", "2025-09-22", "2025-09-23","2025-09-24","2025-09-25"];
+console.log(consecutiveDate(datas1))
+console.log(consecutiveDate(datas2))
+
 export function validateDates(dates) {
+
   return dates.map((data) => {
+
     const cleanDateString = data.replace(/\(.*\)/, "");
     const parsedDate = new Date(cleanDateString);
+
+    console.log(parsedDate)
+    if(!isNaN(parsedDate.getTime())){
+      throw new Error("Invalid date" + data)
+    }
+    
     const dayIndex = parsedDate.getDay();
     const isWeekend = dayIndex === 0 || dayIndex === 6;
     return isWeekend;
   });
 }
 
-export function hotelsTotalPrice(clientType, weekendFlag) {
+
+export function hotelsTotalPrice(clientType, weekendFlag, dates) {
   return hotels.map((hotel) => {
     let total = 0;
 
+    const isConsecutive = consecutiveDate(dates)
+    console.log(isConsecutive)
     weekendFlag.forEach((wknd) => {
       if (wknd) {
         total += hotel.prices[clientType].weekend;
@@ -27,11 +58,13 @@ export function hotelsTotalPrice(clientType, weekendFlag) {
     return {
       name: hotel.name,
       stars: hotel.stars,
-      totalPrice: weekendFlag.length > 3 ? total - (total * discountHotel[clientType] / 100) : total,
+      totalPrice: weekendFlag.length > 3  && isConsecutive ? total - (total * discountHotel[clientType] / 100) : total,
       
     };
   });
 }
+
+
 
 export function cheaperHotel(hotelsTotalPrice) {
   return hotelsTotalPrice.reduce((cheap, atual) =>
@@ -54,7 +87,7 @@ export function compareHotel(inputClient) {
 
   const dates = inputParts[1].split(",");
   const weekendFlag = validateDates(dates);
-  const hotelTotalPrice = hotelsTotalPrice(clientType, weekendFlag);
+  const hotelTotalPrice = hotelsTotalPrice(clientType, weekendFlag, dates);
   const hotel = cheaperHotel(hotelTotalPrice);
   console.log(hotel.name);
   console.log(hotel.totalPrice)
