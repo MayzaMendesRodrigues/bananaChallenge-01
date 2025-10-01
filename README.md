@@ -9,7 +9,7 @@
 
 ## About the Project
 
-This project was developed as part of a **challenge proposed by professor Alan Gomes**, carried out in **pair programming** by **Luiz Paulo Honda** and **Mayza Ynara**.
+This project was developed as part of a **challenge proposed by professor Alan Gomes**, carried out in **pair programming** by **Luiz Paulo Hondo** and **Mayza Ynara**.
 
 The goal was to implement features in **JavaScript**, following the **Test-Driven Development (TDD)** methodology, ensuring greater reliability, maintainability, and clarity in the code.
 
